@@ -23,9 +23,7 @@ public class Main {
 			}
 			long end = System.currentTimeMillis();
 			System.out.printf("Time taken to complete all tasks is %d ms", end - begin);
-		} catch (ExecutionException e) {
-			throw new RuntimeException(e);
-		} catch (InterruptedException e) {
+		} catch (ExecutionException | InterruptedException e) {
 			throw new RuntimeException(e);
 		}
 	}

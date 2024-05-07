@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
-		Barrier barrier = new Barrier(5);
+		CyclicBarrier barrier = new CyclicBarrier(5);
 		int numOfBusinessProcess = 5;
 		List<Thread> threadList = new ArrayList<>();
 		for (int i = 0; i < numOfBusinessProcess; i++) {
